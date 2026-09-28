@@ -1,0 +1,119 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 1. Light Theme (Default) Variables */
+:root {
+  /* Surface & Base */
+  --bg-main: #ffffff;
+  --panel-bg: #f8fafc; /* Slate 50 */
+  --card: #ffffff;
+  --card-foreground: #0f172a; /* Slate 900 */
+  --foreground: #0f172a;
+
+  /* Borders & Dividers */
+  --border: #e2e8f0; /* Slate 200 */
+  --border-subtle: #f1f5f9; /* Slate 100 */
+
+  /* Brand Colors */
+  --brand-main: #7c3aed;
+  --brand-hover: #6d28d9;
+  --brand-dark: #4f46e5;
+  --brand-muted: #f5f3ff; /* Violet 50 */
+
+  /* User/AI Bubble Specifics */
+  --chat-user-bg: #f1f5f9;
+  --chat-ai-bg: #f5f3ff;
+  --chat-ai-border: #ddd6fe;
+}
+
+/* 2. Dark Theme Variables */
+.dark {
+  /* Surface & Base */
+  --bg-main: #020617; /* Slate 950 */
+  --panel-bg: #020617; /* Slate 900 */ /*#0f172a*/
+  --card: rgba(15, 23, 42, 0.9); /* Slate 900 with opacity */
+  --card-foreground: #f8fafc;
+  --foreground: #f8fafc;
+
+  /* Borders & Dividers */
+  --border: #1e293b; /* Slate 800 */
+  --border-subtle: #0f172a;
+
+  /* Brand Colors */
+  --brand-main: #8b5cf6;
+  --brand-hover: #7c3aed;
+  --brand-dark: #6366f1;
+  --brand-muted: rgba(139, 92, 246, 0.1);
+
+  /* User/AI Bubble Specifics */
+  --chat-user-bg: #1e293b;
+  --chat-ai-bg: rgba(139, 92, 246, 0.1);
+  --chat-ai-border: rgba(139, 92, 246, 0.2);
+}
+
+/* 3. Tailwind Theme Mappings */
+@theme {
+  --color-bg-main: var(--bg-main);
+  --color-panel-bg: var(--panel-bg);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-foreground: var(--foreground);
+
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+
+  --color-brand-main: var(--brand-main);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-muted: var(--brand-muted);
+
+  --color-chat-user-bg: var(--chat-user-bg);
+  --color-chat-ai-bg: var(--chat-ai-bg);
+  --color-chat-ai-border: var(--chat-ai-border);
+
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-heading);
+}
+
+/* 4. Base Styles */
+@layer base {
+  body {
+    background-color: var(--bg-main);
+    color: var(--foreground);
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+}
+
+/* 5. Component Utilities */
+@layer components {
+  .btn-submit {
+    @apply bg-brand-main hover:bg-brand-hover text-white px-6 py-2 rounded-md font-medium transition-colors cursor-pointer;
+  }
+}
+
+/* 6. Marquee Animation */
+@layer utilities {
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 32s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-marquee {
+      animation-play-state: paused;
+    }
+  }
+}
