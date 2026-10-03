@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "@/components/shared/header";
 import { Hero } from "@/components/sections/hero";
 import { Features } from "@/components/sections/features";
