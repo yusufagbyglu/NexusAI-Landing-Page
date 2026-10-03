@@ -184,6 +184,10 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+        <p className="mt-6 text-[11px] leading-relaxed text-foreground/45">
+          Nexus AI is a fictional company created as a portfolio project.
+          Testimonials, figures and pricing are placeholders.
+        </p>
       </div>
     </footer>
   );
