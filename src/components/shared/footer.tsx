@@ -1,8 +1,6 @@
-"use client";
-
 import Link from "next/link";
-import React, { FormEvent, useState } from "react";
-import { MicSignal, Bot } from "lucide-react";
+import { Bot } from "lucide-react";
+import NewsletterForm from "@/components/newsletter/NewsletterForm";
 
 interface NavLink {
   name: string;
@@ -78,14 +76,6 @@ const socialLinks = [
 ];
 
 export default function Footer() {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Subscribed with email:", email);
-    setEmail("");
-  };
-
   return (
     <footer className="bg-panel-bg border-t border-border-subtle text-foreground transition-colors duration-300">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
@@ -93,7 +83,6 @@ export default function Footer() {
         <div className="flex flex-col gap-8 border-b border-border-subtle pb-12 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
           <div className="flex items-start gap-4 lg:max-w-sm">
             <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-muted text-brand-main">
-              {/* <MicSignal className="size-6" /> */}
               <Bot className="size-6" />
             </div>
             <div>
@@ -107,33 +96,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <form
-            onSubmit={handleSubmit}
-            className="w-full lg:w-auto lg:min-w-[400px]"
-          >
-            <label htmlFor="UserEmail" className="sr-only">
-              Email
-            </label>
-
-            <div className="flex items-center gap-2 rounded-xl border border-border bg-card p-1.5 focus-within:ring-2 focus-within:ring-brand-main/40 transition-all">
-              <input
-                type="email"
-                id="UserEmail"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="you@company.com"
-                required
-                className="w-full min-w-0 bg-transparent px-3 py-2 text-sm text-foreground placeholder:text-foreground/40 border-none focus:outline-none focus:ring-0"
-              />
-
-              <button
-                type="submit"
-                className="shrink-0 rounded-lg bg-brand-main px-5 py-2.5 text-xs font-bold tracking-wide text-white uppercase hover:bg-brand-hover transition-colors cursor-pointer"
-              >
-                Subscribe
-              </button>
-            </div>
-          </form>
+          <NewsletterForm />
         </div>
 
         {/* Link Columns */}
