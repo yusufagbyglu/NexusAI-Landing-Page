@@ -91,7 +91,7 @@ export function WelcomeEmail({ email, themeMode = "dark" }: WelcomeEmailProps) {
               margin: 0,
             }}
           >
-            Built by [Your Name] · Next.js, React Email
+            Built by Muhammed Yusuf Ağabeyoğlu · Next.js, React Email
           </Text>
         </Container>
       </Body>
