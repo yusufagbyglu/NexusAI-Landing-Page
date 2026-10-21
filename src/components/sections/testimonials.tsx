@@ -23,7 +23,8 @@ export function Testimonials() {
         <div className="flex items-center justify-center space-x-3 pt-4">
           <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-brand-main/20 shadow-sm">
             <Image
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+              // src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+              src="/images/sarah-jenkins.webp"
               alt="Sarah Jenkins"
               fill
               className="object-cover"
