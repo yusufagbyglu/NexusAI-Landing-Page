@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { Check } from "lucide-react";
-import { PricingToggle } from "./pricing-toggle";
 
 const PLANS = [
   {
