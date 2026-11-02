@@ -42,6 +42,8 @@ export default function Header() {
 
           <div className="md:hidden flex items-center">
             <button
+              type="button"
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2 text-foreground/70 hover:bg-panel-bg rounded-lg transition-colors cursor-pointer"
             >

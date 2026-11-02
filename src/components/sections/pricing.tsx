@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Check } from "lucide-react";
+import { PricingToggle } from "./pricing-toggle";
 
 const PLANS = [
   {
@@ -82,6 +83,7 @@ const Pricing = () => {
           <button
             type="button"
             role="switch"
+            aria-label="Toggle between monthly and annual billing"
             aria-checked={billing === "annual"}
             onClick={() =>
               setBilling((prev) => (prev === "monthly" ? "annual" : "monthly"))

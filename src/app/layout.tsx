@@ -86,7 +86,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <main id="main-content">{children}</main>
         </ThemeProvider>
       </body>
     </html>
