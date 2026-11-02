@@ -87,9 +87,9 @@ export function Hero() {
                       <Bot className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-bold text-card-foreground">
+                      <p className="text-xs font-bold text-card-foreground">
                         NexusAI Assistant
-                      </h4>
+                      </p>
                       <p className="text-[11px] text-emerald-500 font-medium flex items-center gap-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
                         Active • 24ms response
