@@ -27,6 +27,7 @@ export function Testimonials() {
               src="/images/sarah-jenkins.webp"
               alt="Sarah Jenkins"
               fill
+              sizes="48px"
               className="object-cover"
             />
           </div>
