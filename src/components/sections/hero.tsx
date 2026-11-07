@@ -35,7 +35,7 @@ export function Hero() {
           {/* Left Column: Heading & CTAs */}
           <div className="space-y-6 lg:col-span-7">
             {/* Pill Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-brand-main/20 bg-brand-muted px-3.5 py-1 text-xs font-medium text-brand-main transition-colors hover:bg-brand-main/20">
+            <div className="inline-flex items-center gap-2 rounded-full border border-brand-main/20 bg-brand-muted px-3.5 py-1 text-xs font-medium text-brand-text transition-colors hover:bg-brand-main/20">
               <span className="flex h-2 w-2 rounded-full bg-brand-main animate-pulse"></span>
               <span>Introducing NexusAI 2.0</span>
               <ChevronRight className="h-3.5 w-3.5" />
@@ -90,13 +90,13 @@ export function Hero() {
                       <p className="text-xs font-bold text-card-foreground">
                         NexusAI Assistant
                       </p>
-                      <p className="text-[11px] text-emerald-500 font-medium flex items-center gap-1">
+                      <p className="text-xs text-success-text font-medium flex items-center gap-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
                         Active • 24ms response
                       </p>
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-brand-muted text-brand-main font-semibold border border-brand-main/20">
+                  <span className="text-xs font-mono px-2 py-0.5 rounded bg-brand-muted text-brand-text font-semibold border border-brand-main/20">
                     NexusAI Core
                   </span>
                 </div>
@@ -123,7 +123,7 @@ export function Hero() {
                         Your package is out for delivery! Estimated arrival is
                         today by 4:00 PM.
                       </p>
-                      <div className="flex items-center gap-1 text-[10px] text-emerald-500 font-semibold">
+                      <div className="flex items-center gap-1 text-xs text-success-text font-semibold">
                         <CheckCircle2 className="w-3 h-3" /> Auto-resolved in
                         1.2s
                       </div>
@@ -132,12 +132,12 @@ export function Hero() {
                 </div>
 
                 {/* Live Stats Footer */}
-                <div className="pt-2 flex items-center justify-between text-[11px] text-foreground/60 border-t border-border-subtle">
+                <div className="pt-2 flex items-center justify-between text-xs text-foreground/60 border-t border-border-subtle">
                   <span>
                     Auto-resolution rate:{" "}
                     <strong className="text-foreground">88.4%</strong>
                   </span>
-                  <span className="text-brand-main font-semibold flex items-center gap-0.5 hover:underline cursor-pointer">
+                  <span className="text-brand-text font-semibold flex items-center gap-0.5 hover:underline cursor-pointer">
                     Live Demo <ArrowRight className="w-3 h-3" />
                   </span>
                 </div>
@@ -148,7 +148,7 @@ export function Hero() {
 
         {/* Social Proof: Infinite Logo Marquee */}
         <div className="mt-20 lg:mt-28 border-t border-border-subtle pt-12">
-          <p className="pb-8 text-center text-xs font-semibold tracking-wider text-foreground/40 uppercase">
+          <p className="pb-8 text-center text-xs font-semibold tracking-wider text-foreground/65 uppercase">
             Trusted by over 10,000+ modern teams worldwide
           </p>
 

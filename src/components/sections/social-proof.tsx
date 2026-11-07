@@ -32,7 +32,7 @@ export function SocialProof() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Column */}
           <div className="lg:col-span-5 space-y-6">
-            <span className="text-xs font-bold text-brand-main tracking-wider uppercase bg-brand-muted px-3 py-1.5 rounded-full inline-block border border-brand-main/20">
+            <span className="text-xs font-bold text-brand-text tracking-wider uppercase bg-brand-muted px-3 py-1.5 rounded-full inline-block border border-brand-main/20">
               Trusted Worldwide
             </span>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground tracking-tight leading-[1.15]">
@@ -68,7 +68,7 @@ export function SocialProof() {
                   key={index}
                   className="p-8 bg-card rounded-2xl border border-border shadow-sm hover:shadow-lg hover:-translate-y-0.5 hover:border-brand-main/30 transition-all duration-200 space-y-4"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-brand-muted text-brand-main flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-brand-muted text-brand-text flex items-center justify-center">
                     <Icon className="h-6 w-6" />
                   </div>
                   <h3 className="font-heading text-3xl font-bold text-card-foreground">

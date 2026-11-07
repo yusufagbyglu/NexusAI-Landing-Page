@@ -30,8 +30,8 @@ export default function CallToAction({
         <div className="relative rounded-3xl border border-border bg-gradient-to-b from-panel-bg via-card to-panel-bg p-8 md:p-16 text-center space-y-8 shadow-xl shadow-brand-main/5 overflow-hidden">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-main/10 blur-3xl rounded-full pointer-events-none" />
 
-          <div className="relative z-10 inline-flex items-center gap-2 rounded-full border border-brand-main/20 bg-brand-muted px-3.5 py-1 text-xs font-medium text-brand-main shadow-sm">
-            <Sparkles className="w-3.5 h-3.5 text-brand-main animate-pulse" />
+          <div className="relative z-10 inline-flex items-center gap-2 rounded-full border border-brand-main/20 bg-brand-muted px-3.5 py-1 text-xs font-medium text-brand-text shadow-sm">
+            <Sparkles className="w-3.5 h-3.5 text-brand-text animate-pulse" />
             <span>Start in under 5 minutes • No credit card required</span>
           </div>
 
@@ -62,14 +62,14 @@ export default function CallToAction({
 
           <div className="pt-6 border-t border-border-subtle flex flex-wrap items-center justify-center gap-6 text-xs font-medium text-foreground/60 relative z-10">
             <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="w-4 h-4 text-emerald-500" /> 14-day free
+              <CheckCircle2 className="w-4 h-4 text-success-text" /> 14-day free
               trial
             </span>
             <span className="flex items-center gap-1.5">
               <Zap className="w-4 h-4 text-amber-500" /> Instant 5-min setup
             </span>
             <span className="flex items-center gap-1.5">
-              <ShieldCheck className="w-4 h-4 text-brand-main" /> Cancel anytime
+              <ShieldCheck className="w-4 h-4 text-brand-text" /> Cancel anytime
             </span>
           </div>
         </div>

@@ -73,7 +73,7 @@ const Pricing = () => {
         <div className="mb-14 flex items-center justify-center gap-3">
           <span
             className={`text-sm font-semibold transition-colors ${
-              billing === "monthly" ? "text-foreground" : "text-foreground/50"
+              billing === "monthly" ? "text-foreground" : "text-foreground/65"
             }`}
           >
             Monthly
@@ -99,13 +99,13 @@ const Pricing = () => {
 
           <span
             className={`text-sm font-semibold transition-colors ${
-              billing === "annual" ? "text-foreground" : "text-foreground/50"
+              billing === "annual" ? "text-foreground" : "text-foreground/65"
             }`}
           >
             Annually
           </span>
 
-          <span className="ml-1 text-xs font-bold text-emerald-500 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">
+          <span className="ml-1 text-xs font-bold text-success-text bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">
             Save ~20%
           </span>
         </div>
@@ -138,7 +138,7 @@ const Pricing = () => {
                   <span
                     className={
                       plan.highlighted
-                        ? "text-xs font-bold uppercase tracking-wider text-brand-main"
+                        ? "text-xs font-bold uppercase tracking-wider text-brand-text"
                         : "text-xs font-bold uppercase tracking-wider text-foreground/60"
                     }
                   >
@@ -156,7 +156,7 @@ const Pricing = () => {
                       </span>
                       <span className="text-foreground/60 text-sm">/mo</span>
                       {originalPrice && (
-                        <span className="text-xs line-through text-foreground/40">
+                        <span className="text-xs line-through text-foreground/65">
                           {originalPrice}€
                         </span>
                       )}
@@ -164,7 +164,7 @@ const Pricing = () => {
                   )}
 
                   {!isFree && billing === "annual" && (
-                    <p className="text-xs text-foreground/50 -mt-2 mb-2">
+                    <p className="text-xs text-foreground/65 -mt-2 mb-2">
                       Billed annually
                     </p>
                   )}
@@ -179,7 +179,7 @@ const Pricing = () => {
                             : "flex items-center space-x-3 text-sm text-foreground/80"
                         }
                       >
-                        <Check className="w-4 h-4 text-brand-main shrink-0" />
+                        <Check className="w-4 h-4 text-brand-text shrink-0" />
                         <span>{text}</span>
                       </li>
                     ))}

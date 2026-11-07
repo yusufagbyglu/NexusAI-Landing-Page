@@ -80,11 +80,11 @@ export default function Faq({
             open={defaultOpen}
           >
             <summary className="flex cursor-pointer items-center justify-between gap-4 text-foreground list-none">
-              <span className="text-base sm:text-lg font-semibold select-none group-open:text-brand-main transition-colors">
+              <span className="text-base sm:text-lg font-semibold select-none group-open:text-brand-text transition-colors">
                 {question}
               </span>
               <span className="ml-6 flex h-7 items-center">
-                <ChevronDown className="w-5 h-5 text-foreground/50 transition-transform duration-300 group-open:rotate-180 group-open:text-brand-main" />
+                <ChevronDown className="w-5 h-5 text-foreground/65 transition-transform duration-300 group-open:rotate-180 group-open:text-brand-text" />
               </span>
             </summary>
 
