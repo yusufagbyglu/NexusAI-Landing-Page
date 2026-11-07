@@ -82,7 +82,7 @@ export default function Footer() {
         {/* Top: Logo + Newsletter */}
         <div className="flex flex-col gap-8 border-b border-border-subtle pb-12 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
           <div className="flex items-start gap-4 lg:max-w-sm">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-muted text-brand-main">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-muted text-brand-text">
               <Bot className="size-6" />
             </div>
             <div>
@@ -103,7 +103,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-x-6 gap-y-10 pt-12 sm:grid-cols-3 lg:grid-cols-5">
           {linkColumns.map((column) => (
             <div key={column.title}>
-              <p className="text-xs font-semibold uppercase tracking-wider text-foreground/45">
+              <p className="text-xs font-semibold uppercase tracking-wider text-foreground/65">
                 {column.title}
               </p>
 
@@ -112,7 +112,7 @@ export default function Footer() {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-foreground/70 hover:text-brand-main transition-colors"
+                      className="text-foreground/70 hover:text-brand-text transition-colors"
                     >
                       {link.name}
                     </Link>
@@ -131,7 +131,7 @@ export default function Footer() {
               href={social.href}
               rel="noreferrer"
               target="_blank"
-              className="flex h-9 w-9 items-center justify-center rounded-full text-foreground/60 hover:bg-brand-muted hover:text-brand-main transition-colors"
+              className="flex h-9 w-9 items-center justify-center rounded-full text-foreground/60 hover:bg-brand-muted hover:text-brand-text transition-colors"
             >
               <span className="sr-only">{social.name}</span>
               <svg
@@ -149,7 +149,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-4 border-t border-border-subtle pt-8">
           <div className="sm:flex sm:items-center sm:justify-between">
-            <p className="text-xs text-foreground/55">
+            <p className="text-xs text-foreground/65">
               &copy; {new Date().getFullYear()} Nexus AI Inc. All rights
               reserved.
             </p>
@@ -158,7 +158,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-foreground/60 hover:text-brand-main transition-colors"
+                  className="text-foreground/60 hover:text-brand-text transition-colors"
                 >
                   Terms & Conditions
                 </Link>
@@ -167,7 +167,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-foreground/60 hover:text-brand-main transition-colors"
+                  className="text-foreground/60 hover:text-brand-text transition-colors"
                 >
                   Privacy Policy
                 </Link>
@@ -176,7 +176,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-foreground/60 hover:text-brand-main transition-colors"
+                  className="text-foreground/60 hover:text-brand-text transition-colors"
                 >
                   Cookies
                 </Link>
@@ -184,7 +184,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <p className="mt-6 text-[11px] leading-relaxed text-foreground/45">
+        <p className="mt-6 text-xs leading-relaxed text-foreground/65">
           Nexus AI is a fictional company created as a portfolio project.
           Testimonials, figures and pricing are placeholders.
         </p>
