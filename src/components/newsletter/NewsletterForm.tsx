@@ -69,7 +69,7 @@ export default function NewsletterForm() {
             {error}
           </p>
         )}
-        <p id="newsletter-note" className="mt-2 text-[11px] text-foreground/45">
+        <p id="newsletter-note" className="mt-2 text-xs text-foreground/65">
           Demo: submitting previews the welcome email. Nothing is sent or
           stored.
         </p>
