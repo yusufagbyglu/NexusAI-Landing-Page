@@ -22,6 +22,8 @@
   --brand-hover: #6d28d9;
   --brand-dark: #4f46e5;
   --brand-muted: #f5f3ff; /* Violet 50 */
+  --brand-text: #6d28d9; /* purple text on a light background */
+  --success-text: #047857; /* green text on a light background */
 
   /* User/AI Bubble Specifics */
   --chat-user-bg: #f1f5f9;
@@ -43,10 +45,12 @@
   --border-subtle: #0f172a;
 
   /* Brand Colors */
-  --brand-main: #8b5cf6;
-  --brand-hover: #7c3aed;
+  --brand-main: #7c3aed; /* formerly #8b5cf6 */
+  --brand-hover: #6d28d9; /* formerly #7c3aed */
   --brand-dark: #6366f1;
   --brand-muted: rgba(139, 92, 246, 0.1);
+  --brand-text: #a78bfa;
+  --success-text: #10b981;
 
   /* User/AI Bubble Specifics */
   --chat-user-bg: #1e293b;
@@ -69,6 +73,9 @@
   --color-brand-hover: var(--brand-hover);
   --color-brand-dark: var(--brand-dark);
   --color-brand-muted: var(--brand-muted);
+  --color-brand-text: var(--brand-text);
+
+  --color-success-text: var(--success-text);
 
   --color-chat-user-bg: var(--chat-user-bg);
   --color-chat-ai-bg: var(--chat-ai-bg);
